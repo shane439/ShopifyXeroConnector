@@ -1,0 +1,16 @@
+node_modules/
+dist/
+build/
+coverage/
+*.log
+sa.json
+*.local
+.env*
+.clasp.json.local
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+~$*
+*.tmp
+*.swp
