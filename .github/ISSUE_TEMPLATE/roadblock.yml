@@ -1,0 +1,31 @@
+name: Roadblock
+description: Use when we hit a wall and need code + logs
+labels: [roadblock, triage]
+body:
+  - type: textarea
+    id: symptom
+    attributes:
+      label: Symptom
+      description: Exact error text/logs and where you saw it
+      placeholder: e.g. Xero 400 Bad Request on /Invoices PUT
+  - type: textarea
+    id: repro
+    attributes:
+      label: Minimal Repro
+      description: Steps + tiniest code that triggers it
+      placeholder: 1) Step… 2) Step… 3) Expected vs actual
+  - type: input
+    id: chat
+    attributes:
+      label: Chat link (optional)
+      description: Link to the ChatGPT message/thread for context
+  - type: textarea
+    id: tried
+    attributes:
+      label: Things tried
+      description: Bullets of attempts (what didn’t work)
+  - type: input
+    id: files
+    attributes:
+      label: Suspect files (paths)
+      description: e.g. Xero_Push_Main_BetaV3.js; Xero_Push_Wrappers_Idempotency_BetaV3.js
